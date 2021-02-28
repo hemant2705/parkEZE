@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ownerSign">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="303dp"
+        android:src="@drawable/logo_transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="224dp"
+        android:text="Sign up"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/cell4"
+        android:orientation="vertical"
+        android:padding="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="1">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fullname"
+            android:textColorHint="#000000"
+            app:boxStrokeColor="#000000"
+            app:boxStrokeWidthFocused="2dp"
+            app:endIconMode="clear_text"
+            app:endIconTint="#000000"
+            app:hintTextColor="#000000"
+            app:startIconDrawable="@drawable/ic_addi"
+            app:startIconTint="#000000">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textAutoCorrect" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email Address"
+            android:textColorHint="#000000"
+            app:boxStrokeColor="#000000"
+            app:boxStrokeWidthFocused="2dp"
+            app:endIconMode="clear_text"
+            app:endIconTint="#000000"
+            app:hintTextColor="#000000"
+            app:startIconDrawable="@drawable/ic_addi"
+            app:startIconTint="#000000">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mobile Number"
+            android:textColorHint="#000000"
+            app:boxStrokeColor="#000000"
+            app:boxStrokeWidthFocused="2dp"
+            app:endIconMode="clear_text"
+            app:endIconTint="#000000"
+            app:hintTextColor="#000000"
+            app:startIconDrawable="@drawable/ic_addi"
+            app:startIconTint="#000000">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textColorHint="#000000"
+            app:boxStrokeColor="#000000"
+            app:boxStrokeWidthFocused="2dp"
+            app:endIconTint="#000000"
+            app:hintTextColor="#000000"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="#000000"
+            app:startIconDrawable="@drawable/ic_addi"
+            app:startIconTint="#000000">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Parkingdesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Land Description"
+            android:textColorHint="#000000"
+            app:boxStrokeColor="#000000"
+            app:boxStrokeWidthFocused="2dp"
+            app:endIconMode="clear_text"
+            app:endIconTint="#000000"
+            app:hintTextColor="#000000"
+            app:startIconDrawable="@drawable/ic_addi"
+            app:startIconTint="#000000">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textAutoCorrect" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+         
+
+
+        <Button
+            android:id="@+id/nexti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:text="next"
+            android:textColor="#ffffff"
+            android:transitionName="next_button" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/loader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
